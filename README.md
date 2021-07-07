@@ -10,3 +10,7 @@
 ### Frontend:
 - npm install
 - npm start
+
+
+#### Features: 
+- Authentication using JWT.
