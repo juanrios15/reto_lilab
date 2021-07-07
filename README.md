@@ -5,6 +5,7 @@
 - Create database in postgreSQL and modify credentials inside settings.py
 - python manage.py makemigrations
 - python manage.py migrate
+- python manage.py createsuperuser
 - python manage.py runserver
 
 ### Frontend:
