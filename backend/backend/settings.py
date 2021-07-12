@@ -83,15 +83,22 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "reto_lilab",
-        'USER': "juanrios",
-        'PASSWORD': "12345678",
-        'HOST': 'localhost',
-        'PORT': '5432'
-        
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': "reto_lilab",
+#         'USER': "juanrios",
+#         'PASSWORD': "12345678",
+#         'HOST': 'localhost',
+#         'PORT': '5432'
+        
+#     }
+# }
 
 
 # Password validation
@@ -182,5 +189,6 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
 
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
 ]
